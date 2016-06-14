@@ -1,10 +1,10 @@
 <apex:page controller="Unit" id="Game">
     <apex:form >           
-        <apex:pageBlock >
+        <apex:pageBlock >                 
              <apex:pageBlockSection >
                 <apex:outputText label="Hero name: " value="{!firstName}"/> <apex:outputText label="Hero name: " value="{!secondName}"/>
                 <apex:outputText id="firstHP" value="{!firstHP}" label="HP"/> <apex:outputText id="secondHP" value="{!secondHP}" label="HP"/>
-                <apex:image url="https://s-media-cache-ak0.pinimg.com/236x/5a/5e/5a/5a5e5af1f3117407341623601720b513.jpg" width="300" height="400"/> <apex:image url="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpT_5jzxE-rFVs5yU23UO9Pki6UZ_lIoSUdyzmVj5qd_FFuEtvfA" width="300" height="400"/>
+                <apex:image url="{!firstimage}" width="300" height="400"/> <apex:image url="{!secondimage}" width="300" height="400"/>
             </apex:pageBlockSection>
         <apex:pageBlockSection >
         <apex:selectRadio value="{!hitPlace}" legendText="Select Hit Place" id="hitPlace" required="true">
